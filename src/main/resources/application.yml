@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    url: jdbc:mariadb://1.249.139.46:3308/KotilinExample
+    username: 'jhy'
+    password: '!a1s4d77490A'
+    driver-class-name: org.mariadb.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update # 엔티티에 변화가 생겼을 때 테이블 스키마도 업데이트한다
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+
+  resources:
+    static-locations:
+  servlet:
+    multipart:
+      max-file-size: 20MB
+
+parayo:
+  file-upload:
+   default-dir: /parayo
